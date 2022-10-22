@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GestionStockFont';
+  title = 'ShoGeStock';
+  showHideSideBar: boolean = false;
+  onShowSideBarChange(showHideSideBar){
+    this.showHideSideBar = showHideSideBar;
+  }
 }

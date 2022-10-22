@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'GestionStockFont'`, () => {
+  it(`should have as title 'ShoGeStock'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('GestionStockFont');
+    expect(app.title).toEqual('ShoGeStock');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('GestionStockFont app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ShoGeStock app is running!');
   });
 });
