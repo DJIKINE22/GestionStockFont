@@ -1,7 +1,40 @@
+<h3>Produits</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-7">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Code Barre</th><th>Quantité</th><th>Prix Unitaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let produit of produits">
+            <td> {{ produit.codebarre }}</td>
+            <td>  {{ produit.quantite }}</td>
+            <td>  {{ produit.prixunitaire }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="col-lg-5">
+        <div class="card">
+          <div class="card-header bg-info ">
+            Ajouter Proudit
+          </div>
+          <div class="card-body">
+            <form [FormGroup]="produitForm" action="index.html" method="post">
+              <div class="form-group">
+                <label for="co">Code Barre</label>
+                <input type="text" name="co" class="form-control" formControleName="code" value="">
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
 
-<ul>
-  <li *ngFor="let produit of produits">
-    Code barre:{{ produit.codebarre }}, Quantité: {{produit.quantite }}, Prix Unitaire: {{produit.prixunitaire}}
+          </div>
+        </div>
 
-  </li>
-</ul>
+      </div>
+  </div>
+</div>

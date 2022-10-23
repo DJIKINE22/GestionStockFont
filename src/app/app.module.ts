@@ -11,6 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContenuComponent } from './contenu/contenu.component';
 import { LogoComponent } from './logo/logo.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +21,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ContenuComponent,
     LogoComponent,
     DashboardComponent,
-    
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [ProduitMockService],
