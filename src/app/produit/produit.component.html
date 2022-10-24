@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h3>Produits</h3>
 <div class="container">
   <div class="row">
@@ -37,4 +38,41 @@
 
       </div>
   </div>
+=======
+<h1>Produits</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+          <table class=" table table-hover">
+            <thead>
+              <tr>
+                <th>Code Barre</th>
+                <th>Quantité</th>
+                <th>Prix Unitaire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr  *ngFor="let produit of produits">
+                <td>{{ produit.codebarre }}</td>
+                <td>{{produit.quantite }}</td>
+                <td>{{produit.prixunitaire}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header bg-info">
+                Ajouter Produit
+              </div>
+              <div class="card-body">
+
+              </div>
+              <div class="card-footer">
+              </div>
+            </div>
+          </div>
+
+    </div>
+>>>>>>> navside_Bar
 </div>
