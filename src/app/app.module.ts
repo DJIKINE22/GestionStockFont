@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContenuComponent } from './contenu/contenu.component';
 import { LogoComponent } from './logo/logo.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { LogoComponent } from './logo/logo.component';
     SidebarComponent,
     ContenuComponent,
     LogoComponent,
+    DashboardComponent,
     
 
   ],
